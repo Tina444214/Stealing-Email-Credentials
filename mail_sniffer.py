@@ -10,7 +10,7 @@ def packet_callback(packet):
             print("[*] Server: {0}".format(packet[IP].dst))
             print("[*] {0}".format(packet[TCP].payload))
 
-# start the sniffer
+# start the sniffer (原本的)
 sniff(filter="tcp port 110 or tcp port 25 or tcp port 143", prn=packet_callback, store=0)
 
 # ====>修改後，增加過濾條件，也抓取port為80的流量
