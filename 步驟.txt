@@ -6,4 +6,6 @@ ls   #利用ls查詢目錄
 cd   #利用cd抵達我們要的目錄=> Chapter4
 python mail.sniffer.py         #執行mail.sniffer.py檔案=> 發現執行不了
 more mail.sniffer.py           #查看檔案內容
-gedit mail.sniffer.py          #開啟檔案、修改程式碼
+gedit mail.sniffer.py          #開啟檔案、修改程式碼，增加port 80
+
+python mail.sniffer.py         #再次執行，連上http://www.nicovideo.jp/?header (未加密http)
